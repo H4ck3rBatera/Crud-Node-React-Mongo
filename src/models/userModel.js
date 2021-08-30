@@ -1,23 +1,35 @@
 const mongoose = require("mongoose");
-// const bcrypt = require("bcrypt");
+const c = require("bcrypt");
 const DataSchema = mongoose.Schema(
   {
-    name: String,
-    email: String,
-    password: String,
+    name: {
+      type: String,
+      required: true,
+    },
+    email: {
+      type: String,
+      unique: true,
+      required: true,
+      lowercase: true,
+    },
+    password: {
+      type: String,
+      required: true,
+      select: false,
+    },
   },
   {
     timestamps: true,
   }
 );
 
-// DataSchema.pre("save", function (next) {
-//   if (!this.isModified("password")) {
-//     return next();
-//   }
-//   this.password = bcrypt.hashSync(this.password, 10);
-//   next();
-// });
+DataSchema.pre("save", function (next) {
+  if (!this.isModified("password")) {
+    return next();
+  }
+  this.password = bcrypt.hashSync(this.password, 10);
+  next();
+});
 
 const users = mongoose.model("Users", DataSchema);
 module.exports = users;
