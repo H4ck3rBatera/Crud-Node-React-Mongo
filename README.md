@@ -34,7 +34,7 @@ const doc = {
     title: "Crud-Node-React-Mongo",
     description: "Documentation | Crud-Node-React-Mongo",
   },
-  host: "localhost:3000",
+  host: "localhost:5000",
   basePath: "/",
   schemes: ["http"],
   consumes: ["application/json"],
