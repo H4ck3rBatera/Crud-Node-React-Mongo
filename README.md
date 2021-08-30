@@ -10,6 +10,8 @@ npm i path
 npm i nodemon -d
 npm i mongoose
 npm i bcrypt
+npm install -g create-react-app
+npm i concurrently -d
 
 npm run dev
 ```
@@ -34,7 +36,7 @@ const doc = {
     title: "Crud-Node-React-Mongo",
     description: "Documentation | Crud-Node-React-Mongo",
   },
-  host: "localhost:5000",
+  host: "localhost:3000",
   basePath: "/",
   schemes: ["http"],
   consumes: ["application/json"],
@@ -46,4 +48,3 @@ swaggerAutogen(outputFile, endpointsFiles, doc).then(() => {
 });
 
 ```
-
