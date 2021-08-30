@@ -1,9 +1,6 @@
 const UserModel = require("../models/userModel");
 
 module.exports = {
-  index(req, res) {
-    res.json({ message: "oi test" });
-  },
   async create(req, res) {
     const { name, email, password } = req.body;
     let data = {};
