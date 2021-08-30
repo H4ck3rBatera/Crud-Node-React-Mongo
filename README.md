@@ -14,10 +14,11 @@ npm i bcrypt
 npm run dev
 ```
 
-## Swagger
+## Dependencies | Swagger
 ```shell
 npm install --save-dev swagger-autogen
 npm install swagger-ui-express
+
 npm run swagger-autogen
 ```
 ## swagger.js
