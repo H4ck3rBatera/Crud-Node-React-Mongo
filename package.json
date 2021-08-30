@@ -1,0 +1,34 @@
+{
+  "name": "crud-node-react-mongo",
+  "version": "1.0.0",
+  "description": "crud-node-react-mongo",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "swagger-autogen": "node swagger.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/H4ck3rBatera/Crud-Node-React-Mongo.git"
+  },
+  "author": "Jessé Toledo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/H4ck3rBatera/Crud-Node-React-Mongo/issues"
+  },
+  "homepage": "https://github.com/H4ck3rBatera/Crud-Node-React-Mongo#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.2",
+    "nodemon": "^2.0.12",
+    "path": "^0.12.7",
+    "swagger-ui-express": "^4.1.6"
+  },
+  "devDependencies": {
+    "swagger-autogen": "^2.11.2"
+  }
+}
