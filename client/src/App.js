@@ -1,4 +1,5 @@
-import './App.css';
+import React from "react";
+import Inicio from './pages/Client/painel'
 
 function App() {
   return (
