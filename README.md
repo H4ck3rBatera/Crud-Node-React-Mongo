@@ -1,7 +1,7 @@
 # Crud-Node-React-Mongo
 > NodeJS + ReactJS + MongoDB
 
-## Dependencies
+## Dependencies - API
 ```shell
 npm i express
 npm i cookie-parser
@@ -12,6 +12,13 @@ npm i mongoose
 npm i bcrypt
 npm install -g create-react-app
 npm i concurrently -d
+
+npm run dev
+```
+
+## Dependencies - Client
+```shell
+npm i @material-ui/core
 
 npm run dev
 ```
