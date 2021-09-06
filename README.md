@@ -19,9 +19,14 @@ npm run dev
 ## Dependencies - Client
 ```shell
 npm i @material-ui/core
+npm i @material-ui/icons
+npm i react-router-dom
 
 npm run dev
 ```
+
+## [MATERIAL-UI](https://material-ui.com/ "MATERIAL-UI")
+[React Templates](https://material-ui.com/getting-started/templates/ "React Templates")
 
 ## Dependencies | Swagger
 ```shell
@@ -55,3 +60,5 @@ swaggerAutogen(outputFile, endpointsFiles, doc).then(() => {
 });
 
 ```
+
+[1]: https://material-ui.com/ "MATERIAL-UI"
