@@ -16,6 +16,14 @@ npm i concurrently -d
 npm run dev
 ```
 
+## Dependencies | Swagger
+```shell
+npm install --save-dev swagger-autogen
+npm install swagger-ui-express
+
+npm run swagger-autogen
+```
+
 ## Dependencies - Client
 ```shell
 npm i @material-ui/core
@@ -28,13 +36,6 @@ npm run dev
 ## [MATERIAL-UI](https://material-ui.com/ "MATERIAL-UI")
 [React Templates](https://material-ui.com/getting-started/templates/ "React Templates")
 
-## Dependencies | Swagger
-```shell
-npm install --save-dev swagger-autogen
-npm install swagger-ui-express
-
-npm run swagger-autogen
-```
 ## swagger.js
 ```javascript
 const swaggerAutogen = require("swagger-autogen")();
