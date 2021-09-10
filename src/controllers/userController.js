@@ -4,7 +4,8 @@ module.exports = {
   async create(req, res) {
     const { name, email, password } = req.body;
     try {
-      const user = await UserModel.findOne({ email });
+      let user = await UserModel.findOne({ email });
+
       if (!user) {
         const data = { name, email, password };
         user = await UserModel.create(data);

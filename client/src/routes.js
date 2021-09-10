@@ -13,7 +13,7 @@ export default function Routes() {
       <Switch>
         <Route path="/user/create" exact component={userCreate} />
         <Route path="/user/delete/:id" exact component={userDelete} />
-        <Route path="/user/details" exact component={userDetails} />
+        <Route path="/user/details/:id" exact component={userDetails} />
         <Route path="/user" exact component={userIndex} />
         <Route path="/user/update/:id" exact component={userUpdate} />
       </Switch>
