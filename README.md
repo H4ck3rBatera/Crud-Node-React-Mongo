@@ -29,6 +29,7 @@ npm run swagger-autogen
 npm i @material-ui/core
 npm i @material-ui/icons
 npm i react-router-dom
+npm i axios
 
 npm run dev
 ```
