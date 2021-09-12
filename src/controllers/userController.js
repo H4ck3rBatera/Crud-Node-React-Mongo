@@ -43,7 +43,7 @@ module.exports = {
   },
   async index(req, res) {
     try {
-      const users = await UserModel.find();
+      const users = await UserModel.find().sort({name: 'asc'});
       res.json(users);
     } catch (error) {
       console.error(error);
