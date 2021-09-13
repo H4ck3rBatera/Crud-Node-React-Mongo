@@ -21,6 +21,17 @@ export default function UserIndex() {
     loadUsers();
   }, []);
 
+  async function handleDelete(id) {
+    if (window.confirm("Confirm Deletion?")) {
+      var result = await api.delete("/api/users/" + id);
+      if (result.status === 200) {
+        window.location.href = "/user";
+      } else {
+        alert("An error has occurred!");
+      }
+    }
+  }
+
   return (
     <TableContainer>
       <Table aria-label="simple table">
@@ -49,7 +60,12 @@ export default function UserIndex() {
               <TableCell align="right">
                 <ButtonGroup aria-label="outlined primary button group">
                   <Button color="primary">Update</Button>
-                  <Button color="secondary">Delete</Button>
+                  <Button
+                    color="secondary"
+                    onClick={() => handleDelete(row._id)}
+                  >
+                    Delete
+                  </Button>
                 </ButtonGroup>
               </TableCell>
             </TableRow>
