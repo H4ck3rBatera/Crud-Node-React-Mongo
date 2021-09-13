@@ -59,7 +59,9 @@ export default function UserIndex() {
               </TableCell>
               <TableCell align="right">
                 <ButtonGroup aria-label="outlined primary button group">
-                  <Button color="primary">Update</Button>
+                  <Button color="primary" href={"/user/update/" + row._id}>
+                    Update
+                  </Button>
                   <Button
                     color="secondary"
                     onClick={() => handleDelete(row._id)}
