@@ -208,7 +208,7 @@ swaggerAutogen(outputFile, endpointsFiles, doc).then(() => {
 });
 ```
 
-## FrontendFrontend
+## Frontend
 ### Services
 ```javascript
 import axios from "axios";
