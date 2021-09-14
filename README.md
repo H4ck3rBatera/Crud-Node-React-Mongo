@@ -37,7 +37,7 @@ npm run dev
 ## [MATERIAL-UI](https://material-ui.com/ "MATERIAL-UI")
 [React Templates](https://material-ui.com/getting-started/templates/ "React Templates")
 
-## BackendBackend
+## Backend
 ### Models
 ```javascript
 const mongoose = require("mongoose");
